@@ -6,6 +6,7 @@ import authRoutes from "./routes/auth.route.js";
 const app = express();
 const PORT = process.env.PORT || 5000;
 dotenv.config();
+app.use(express.json()); // Allow us to parse incoming requests :req.body
 
 app.use("/api/auth", authRoutes);
 
