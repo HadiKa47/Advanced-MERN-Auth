@@ -9,7 +9,7 @@ import {
   sendWelcomeEmail,
 } from "../mailtrap/emails.js";
 
-export const register = async (req, res) => {
+export const signup  = async (req, res) => {
   const { email, password, name } = req.body;
 
   try {
