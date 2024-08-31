@@ -15,7 +15,7 @@ export const register = async (req, res) => {
   try {
     // Check if all fields are provided
     if (!email || !password || !name) {
-      return res.status(400).json({ message: "All felids are required" });
+      return res.status(400).json({ message: "All fields are required" });
     }
 
     // Username validation checks
